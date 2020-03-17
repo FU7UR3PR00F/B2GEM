@@ -6,8 +6,23 @@ By FU7UR3PR00F
 ===================================
 
 
-Instructions:
+Description:
+-------------
+This package allows you to use Blender 2.8 to convert a panoramic HDR image to a GoldSrc environment map (cl_skymap). You can do a direct conversion, or use the included sky sphere as a backdrop to your own geometry.
 
+
+Includes:
+-------------
+  - B2GEM.blend - Blender file with multi-camera skybox configuration. Just load a 3d panoramic image and render as an animation.
+    - The scene is set up to render six sides of the skybox and place the .tga images in the same folder as the .blend file.
+
+  - B2GEM.bat - Script converts rendered images (Image000*.tga) to proper GoldSrc format, ie: "*bk, *rt, *up, *dn, *lf"
+  
+  - B2GEM_readme.txt - This file :P
+
+
+Instructions:
+-------------
 1. Go to https://hdrihaven.com/hdris/ and choose an environment, download the 4k of your choice
 
 2. Open Blender File "B2GEM.blend". IMPORTANT! Make sure the "HDRI" object is selected
